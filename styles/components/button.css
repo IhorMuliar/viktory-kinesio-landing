@@ -1,0 +1,177 @@
+button:focus, button:active {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button.size-l {
+  min-width: 150px;
+  padding: 15px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button.size-m {
+  min-width: 150px;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*button:focus-visible {*/
+/*  outline: none;*/
+/*}*/
+
+.button.primary {
+  background-color: #ffd8f9;
+  color: var(--black);
+  border: none;
+}
+
+.button.primary.reversed {
+  background-color: var(--white);
+  color: var(--primary);
+  border: none;
+}
+
+.button.primary:hover {
+  opacity: 0.8;
+}
+
+/* Secondary */
+.button.secondary {
+  position: relative;
+  display: inline-block;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button.secondary .text {
+  position: relative;
+  display: inline-block;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.button.secondary::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--primary);
+  z-index: -1;
+  transition: height 0.3s ease-in-out;
+}
+
+.button.secondary:hover {
+  color: white;
+}
+
+.button.secondary:hover .text {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.button.secondary::after {
+  content: 'Запис';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(100%);
+  opacity: 0;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.button.secondary:hover::before {
+  height: 100%;
+}
+
+.button.secondary:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Clear */
+.button.clear {
+  background: transparent;
+  color: var(--primary);
+  border: none;
+}
+
+/* Circle */
+.button.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: #ffd8f9;
+  color: var(--black);
+  transition:
+    transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1),
+    color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button.circle .text {
+  position: relative;
+  z-index: 1;
+}
+
+.button.circle:hover {
+  color: var(--white);
+  animation: jelly 0.8s ease;
+}
+
+@keyframes jelly {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button.circle .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: scale(0);
+}
+
+.button.circle:hover .background {
+  transform: scale(0.97);
+}

@@ -1,0 +1,31 @@
+.faq {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.faq h2 {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex-basis: 40%;
+}
+
+.accordion_container {
+  flex-basis: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}

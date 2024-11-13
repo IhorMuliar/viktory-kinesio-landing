@@ -1,0 +1,46 @@
+a:focus, a:active {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link {
+  position: relative;
+  color: var(--black);
+  padding-bottom: 3px;
+}
+
+.link {
+  background: linear-gradient(0deg, var(--primary), var(--primary)) no-repeat
+    right bottom / 0 1px;
+  transition: background-size 450ms;
+}
+
+.link:where(:hover, :focus-visible) {
+  background-size: 100% 1px;
+  background-position-x: left;
+  outline: none;
+}
+
+.link.reversed {
+  color: var(--white);
+  background: linear-gradient(0deg, var(--white), var(--white)) no-repeat right
+    bottom / 0 1px;
+  transition: background-size 450ms;
+}
+
+.link.reversed:where(:hover, :focus-visible) {
+  background-size: 100% 1px;
+  background-position-x: left;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--background) none;
+}

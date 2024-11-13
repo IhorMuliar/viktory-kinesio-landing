@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --primary: #36153a;
+  /*--background: #f8f7f2;*/
+  --background: #f6f4f0;
+  /*--background: #fdfdf1;*/
+  --primary-content: #cdc2d8;
+  --primary-light: #66517d;
+  --primary-dark: #34293f;
+  --black: #000000;
+  --white: #ffffff;
+  --system: #f7f8fa;
+  --soft-sage-green: #c2d4c4;
+
+  /* Spacing */
+  --space-1: 16px;
+  --space-2: 20px;
+  --space-3: 40px;
+  --space-4: 60px;
+  --space-5: 100px;
+
+  /* Border radius */
+  --border-radius-1: 10px;
+  --border-radius-2: 20px;
+  --border-radius-circle: 50%;
+}

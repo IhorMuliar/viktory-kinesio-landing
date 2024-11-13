@@ -1,0 +1,205 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  max-width: none;
+  width: 100%;
+  background-color: #909c87;
+  color: var(--white);
+}
+
+.footer_rectangles {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+}
+
+.rectangle {
+  background-color: #909c87;
+  opacity: 1;
+  transition-duration: 400ms;
+}
+
+.rectangle_1 {
+  height: 2px;
+}
+.rectangle_2 {
+  height: 4px;
+}
+.rectangle_3 {
+  height: 6px;
+}
+.rectangle_4 {
+  height: 8px;
+}
+.rectangle_5 {
+  height: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  padding: var(--space-5) 80px var(--space-2);
+  gap: var(--space-3);
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.outro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 300px;
+}
+
+.outro a {
+  padding: 0;
+}
+
+.navigation_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--space-2);
+}
+
+.logo {
+  width: 100%;
+  padding: 0;
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+.logo:hover,
+.logo:focus {
+  background: none;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 20px;
+}
+
+.address {
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding-top: var(--space-2);
+  border-top: 1px solid #ffffff4d;
+  font-size: 14px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  position: relative;
+  overflow: hidden;
+}
+
+.socials a svg {
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+}
+
+.socials a:not(.youtube):hover svg path {
+  fill: #ffd8f9;
+  transition: fill 0.4s;
+}
+
+a.youtube svg {
+  width: 25px;
+  height: 25px;
+}
+
+.youtube:hover svg path {
+  stroke: #ffd8f9;
+  transition: stroke 0.4s;
+}
+
+.facebook svg {
+  width: 22px;
+  height: 22px;
+}
+
+.socials a:hover:before {
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 180%;
+  background: #ffd8f9;
+  transform: rotate(45deg);
+  animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.socials a:after {
+  position: absolute;
+  content: '';
+  inset: 3px;
+  background: var(--background);
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .description {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .outro {
+    align-items: center;
+    text-align: center;
+  }
+
+  .outro p {
+    text-align: left;
+  }
+}
