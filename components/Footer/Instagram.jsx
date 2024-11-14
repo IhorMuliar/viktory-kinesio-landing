@@ -24,7 +24,7 @@ const Instagram = () => {
         fill="#0F0F0F"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Instagram
+export default Instagram;

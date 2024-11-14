@@ -14,7 +14,7 @@ const Facebook = () => {
         fill="#000000"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Facebook
+export default Facebook;

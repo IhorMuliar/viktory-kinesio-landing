@@ -26,7 +26,7 @@ const Youtube = () => {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Youtube
+export default Youtube;

@@ -14,7 +14,7 @@ const Telegram = () => {
         fill="#000000"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Telegram
+export default Telegram;
