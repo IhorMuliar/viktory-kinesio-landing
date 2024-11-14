@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+  gap: 30px;
+  padding: 0;
+  max-width: none;
+}
+
+.hero .title {
+  position: absolute;
+  color: white;
+  top: 60%;
+  left: 30%;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.intro img {
+  width: 100%;
+  height: fit-content;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+.product:first-child {
+  border-top: 1px solid black;
+}
+
+.product img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product a {
+  margin-top: auto;
+}

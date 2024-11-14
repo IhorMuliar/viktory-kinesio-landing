@@ -1,0 +1,34 @@
+.hero {
+  position: relative;
+  gap: 30px;
+  padding: 0;
+  max-width: none;
+}
+
+.hero .title {
+  position: absolute;
+  color: white;
+  top: 60%;
+  left: 30%;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.intro img {
+  width: 100%;
+  height: fit-content;
+}
+
+.details {
+  padding-right: 300px;
+  padding-left: 300px;
+}
