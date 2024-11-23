@@ -23,8 +23,8 @@ export default {
       },
     },
     {
-      name: 'category',
-      title: 'Категорія',
+      name: 'categories',
+      title: 'Категорії',
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'productCategory' }] }],
       description: 'Категорія продукту',

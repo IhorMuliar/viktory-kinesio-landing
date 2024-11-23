@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { client } from '@/sanity/lib/client';
@@ -8,9 +11,7 @@ import { playfairDisplay } from '@/app/fonts';
 
 import styles from './products.module.css';
 
-export const revalidate = 0;
-
-export async function fetchCategories() {
+async function fetchCategories() {
   const query = `
     *[_type == "productCategory"] | order(title asc) {
       title,
@@ -21,8 +22,50 @@ export async function fetchCategories() {
   return client.fetch(query);
 }
 
-const Products = async () => {
-  const categories = await fetchCategories();
+async function fetchProducts(categorySlug) {
+  const query = `
+    *[_type == "product" ${categorySlug ? `&& "${categorySlug}" in categories[]->slug.current]` : ']'} | order(releaseDate desc) {
+      title,
+      releaseDate,
+      categories[] -> {
+        title,
+        slug
+      },
+      slug,
+      preview {
+        asset -> {
+          _id,
+          url
+        }
+      }
+    }
+  `;
+
+  return client.fetch(query);
+}
+
+const Products = () => {
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  useEffect(() => {
+    const initializeData = async () => {
+      const fetchedCategories = await fetchCategories();
+      setCategories(fetchedCategories);
+
+      const fetchedProducts = await fetchProducts();
+      setProducts(fetchedProducts);
+    };
+
+    initializeData();
+  }, []);
+
+  const handleCategoryClick = async (categorySlug) => {
+    setActiveCategory(categorySlug);
+    const fetchedProducts = await fetchProducts(categorySlug);
+    setProducts(fetchedProducts);
+  };
 
   return (
     <>
@@ -38,38 +81,39 @@ const Products = async () => {
       </section>
       <section className={styles.products}>
         <ul className={styles.filters}>
-          <li className={`${styles.filter} ${styles.active}`}>Всі</li>
+          <li
+            className={`${styles.filter} ${!activeCategory ? styles.active : ''}`}
+            onClick={() => handleCategoryClick(null)}
+          >
+            Всі
+          </li>
           {categories.map((category) => (
-            <li className={styles.filter} key={category.slug}>
+            <li
+              className={`${styles.filter} ${
+                activeCategory === category.slug.current ? styles.active : ''
+              }`}
+              key={category.slug.current}
+              onClick={() => handleCategoryClick(category.slug.current)}
+            >
               {category.title}
             </li>
           ))}
         </ul>
         <ul className={styles.list}>
-          <li className={styles.product}>
-            <div className={styles.image_wrapper}>
-              <Image src={horizontal_portrait} alt="Test image" width={300} height={200} />
-            </div>
-            <div className={styles.text_container}>
-              <Link href="/products/1">
-                <h2 className={playfairDisplay.className}>Як правильно ступати на ногу?</h2>
-              </Link>
-              <p>14.10.24 / Навчальний</p>
-            </div>
-            <LinkButton href="/products/1" />
-          </li>
-          <li className={styles.product}>
-            <div className={styles.image_wrapper}>
-              <Image src={horizontal_portrait} alt="Test image" width={300} height={200} />
-            </div>
-            <div className={styles.text_container}>
-              <Link href="/products/2">
-                <h2 className={playfairDisplay.className}>Як правильно ступати на ногу?</h2>
-              </Link>
-              <p>14.10.24 / Навчальний</p>
-            </div>
-            <LinkButton href="/products/2" />
-          </li>
+          {products.map((product) => (
+            <li className={styles.product} key={product.slug.current}>
+              <div className={styles.image_wrapper}>
+                <Image src={product.preview.asset.url} alt="Test image" width={300} height={200} />
+              </div>
+              <div className={styles.text_container}>
+                <Link href={`/products/${product.slug.current}`}>
+                  <h2 className={playfairDisplay.className}>{product.title}</h2>
+                </Link>
+                <p>{product.releaseDate} / Навчальний</p>
+              </div>
+              <LinkButton href={`/products/${product.slug.current}`} />
+            </li>
+          ))}
         </ul>
       </section>
     </>

@@ -110,6 +110,10 @@
   color: inherit;
 }
 
+.product a:last-child {
+  margin-left: auto;
+}
+
 @media only screen and (max-width: 768px) {
   .image_wrapper {
     height: 250px;
@@ -133,7 +137,6 @@
 @media only screen and (max-width: 900px) {
   .product {
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
 
   .image_wrapper {
