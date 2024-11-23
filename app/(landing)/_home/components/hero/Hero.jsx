@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
+import { playfairDisplay } from '@/app/fonts';
+
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -37,6 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, translateY: '100%' }}
           animate={hasAnimated ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: '100%' }}
           transition={{ duration: 0.6 }}
+          className={playfairDisplay.className}
         >
           <span>Привіт</span>, я Вікторія.
         </motion.h1>

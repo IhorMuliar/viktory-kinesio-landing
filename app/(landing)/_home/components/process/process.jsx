@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import image from '@/public/images/hero-portrait.jpg';
+import { playfairDisplay } from '@/app/fonts';
 import { processes } from './constants.js';
 
 import styles from './process.module.css';
@@ -53,6 +54,7 @@ const Process = () => {
           hasAnimated ? { opacity: 1, translateY: '-100px' } : { opacity: 0, translateY: '300%' }
         }
         transition={{ duration: 0.6 }}
+        className={playfairDisplay.className}
       >
         <span>Як проходить</span> сеанс
       </motion.h2>

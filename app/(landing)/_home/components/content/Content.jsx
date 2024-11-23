@@ -4,8 +4,10 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
-import styles from './Content.module.css';
+import { playfairDisplay } from '@/app/fonts';
 import { content } from './constants.js';
+
+import styles from './Content.module.css';
 
 const Content = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -34,6 +36,7 @@ const Content = () => {
         initial={{ opacity: 0, translateY: '100%' }}
         animate={hasAnimated ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: '100%' }}
         transition={{ duration: 0.4 }}
+        className={playfairDisplay.className}
       >
         <div className={styles.wrapper}>
           <span>Ліцензований терапевт</span> у Києві
@@ -45,7 +48,7 @@ const Content = () => {
             {index % 2 === 0 ? (
               <>
                 <div className={`${styles.text_container} ${styles.right}`}>
-                  <h3 className="bold-l">
+                  <h3 className={playfairDisplay.className}>
                     {/*Я ніколи <span>не вважала</span> це своєю місією*/}
                     {article.title}
                   </h3>
@@ -57,7 +60,7 @@ const Content = () => {
               <>
                 <Image src={article.image} alt="test" />
                 <div className={`${styles.text_container} ${styles.left}`}>
-                  <h3 className="bold-l">
+                  <h3 className={playfairDisplay.className}>
                     {/*Я ніколи <span>не вважала</span> це своєю місією*/}
                     {article.title}
                   </h3>

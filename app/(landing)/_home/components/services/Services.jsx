@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 import icon from '@/public/images/test-icon.svg';
+import { playfairDisplay } from '@/app/fonts';
 import { services } from './constants.js';
 
 import styles from './Services.module.css';
@@ -64,6 +65,7 @@ const Services = () => {
           initial={{ opacity: 0, translateY: '100%' }}
           animate={hasAnimated ? { opacity: 1, translateY: 0 } : { opacity: 0, translateY: '100%' }}
           transition={{ duration: 0.4 }}
+          className={playfairDisplay.className}
         >
           <span>Терапевтичні</span> послуги
         </motion.h2>
@@ -75,7 +77,7 @@ const Services = () => {
               <div className={styles.icon}>
                 <Image src={icon} alt="service icon" width={22} height={18} />
               </div>
-              <h3 className="bold-m">{service.title}</h3>
+              <h3 className={playfairDisplay.className}>{service.title}</h3>
               <p>{service.description}</p>
             </li>
           ))}

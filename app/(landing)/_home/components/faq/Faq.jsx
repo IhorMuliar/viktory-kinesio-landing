@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import Accordion from '@/components/Accordion/Accordion';
+import { playfairDisplay } from '@/app/fonts';
 import { faq } from './constants.js';
+
 import styles from './Faq.module.css';
 
 const Faq = () => {
@@ -36,6 +38,7 @@ const Faq = () => {
             initial={{ translateY: '120%' }}
             animate={hasAnimated ? { translateY: 0 } : { translateY: '120%' }}
             transition={{ duration: 0.7 }}
+            className={playfairDisplay.className}
           >
             <div className={styles.wrapper}>
               <span>Питання</span> та
