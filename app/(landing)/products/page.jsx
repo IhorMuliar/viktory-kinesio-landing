@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { client } from '@/sanity/lib/client';
 
 import horizontal_portrait from '@/public/images/horizontal-portrait.jpg';
 import LinkButton from '@/app/(landing)/products/link-button';
@@ -7,7 +8,22 @@ import { playfairDisplay } from '@/app/fonts';
 
 import styles from './products.module.css';
 
-const Products = () => {
+export const revalidate = 0;
+
+export async function fetchCategories() {
+  const query = `
+    *[_type == "productCategory"] | order(title asc) {
+      title,
+      slug,
+    }
+  `;
+
+  return client.fetch(query);
+}
+
+const Products = async () => {
+  const categories = await fetchCategories();
+
   return (
     <>
       <section className={styles.hero}>
@@ -23,9 +39,11 @@ const Products = () => {
       <section className={styles.products}>
         <ul className={styles.filters}>
           <li className={`${styles.filter} ${styles.active}`}>Всі</li>
-          <li className={styles.filter}>Майстер-класи</li>
-          <li className={styles.filter}>Курси</li>
-          <li className={styles.filter}>Пости</li>
+          {categories.map((category) => (
+            <li className={styles.filter} key={category.slug}>
+              {category.title}
+            </li>
+          ))}
         </ul>
         <ul className={styles.list}>
           <li className={styles.product}>
