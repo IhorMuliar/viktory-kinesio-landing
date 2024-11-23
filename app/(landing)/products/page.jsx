@@ -2,6 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import horizontal_portrait from '@/public/images/horizontal-portrait.jpg';
+import LinkButton from '@/app/(landing)/products/link-button';
+import { playfairDisplay } from '@/app/fonts';
+
 import styles from './products.module.css';
 
 const Products = () => {
@@ -9,7 +12,7 @@ const Products = () => {
     <>
       <section className={styles.hero}>
         <div className={`${styles.title} ${styles.wrapper}`}>
-          <h1>
+          <h1 className={playfairDisplay.className}>
             Мої <span>продукти</span>
           </h1>
         </div>
@@ -18,38 +21,38 @@ const Products = () => {
         </div>
       </section>
       <section className={styles.products}>
-        <div className={styles.filters}>
-          <div className={styles.filter}>Всі</div>
-          <div className={styles.filter}>Майстер-класи</div>
-          <div className={styles.filter}>Курси</div>
-          <div className={styles.filter}>Пости</div>
-        </div>
-        <div className={styles.list}>
-          <div className={styles.product}>
-            <Image src={horizontal_portrait} alt="Test image" />
+        <ul className={styles.filters}>
+          <li className={`${styles.filter} ${styles.active}`}>Всі</li>
+          <li className={styles.filter}>Майстер-класи</li>
+          <li className={styles.filter}>Курси</li>
+          <li className={styles.filter}>Пости</li>
+        </ul>
+        <ul className={styles.list}>
+          <li className={styles.product}>
+            <div className={styles.image_wrapper}>
+              <Image src={horizontal_portrait} alt="Test image" width={300} height={200} />
+            </div>
             <div className={styles.text_container}>
               <Link href="/products/1">
-                <h2>Як правильно ступати на ногу?</h2>
+                <h2 className={playfairDisplay.className}>Як правильно ступати на ногу?</h2>
               </Link>
               <p>14.10.24 / Навчальний</p>
             </div>
-            <Link href="/" className="link">
-              Детальніше
-            </Link>
-          </div>
-          <div className={styles.product}>
-            <Image src={horizontal_portrait} alt="Test image" />
+            <LinkButton href="/products/1" />
+          </li>
+          <li className={styles.product}>
+            <div className={styles.image_wrapper}>
+              <Image src={horizontal_portrait} alt="Test image" width={300} height={200} />
+            </div>
             <div className={styles.text_container}>
               <Link href="/products/2">
-                <h2>Як правильно ступати на ногу?</h2>
+                <h2 className={playfairDisplay.className}>Як правильно ступати на ногу?</h2>
               </Link>
               <p>14.10.24 / Навчальний</p>
             </div>
-            <Link href="/products/2" className="link">
-              Детальніше
-            </Link>
-          </div>
-        </div>
+            <LinkButton href="/products/2" />
+          </li>
+        </ul>
       </section>
     </>
   );

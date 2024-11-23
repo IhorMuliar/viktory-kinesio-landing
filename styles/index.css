@@ -6,4 +6,5 @@
 /* Components */
 @import 'components/button.css';
 @import 'components/link.css';
+@import 'components/link-button.css';
 @import 'components/scrollbar.css';

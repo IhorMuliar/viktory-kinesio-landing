@@ -1,0 +1,33 @@
+.link-button {
+  border: 1px solid #909c87;
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link-button:hover {
+  background-color: #909c87;
+}
+
+.link-button:hover .icon path {
+  fill: #fff;
+}
+
+.link-button .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.link-button .icon path {
+  fill: #909c87;
+  transition: fill 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .link-button {
+    padding: 12px;
+  }
+}
