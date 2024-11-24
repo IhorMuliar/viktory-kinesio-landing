@@ -110,20 +110,8 @@ export default {
       description: 'Соцмережі для продукту',
       initialValue: [
         {
-          href: 'https://t.me/ViktoryKinesio',
-          type: 'Telegram',
-        },
-        {
           href: 'https://www.youtube.com/@Viktory.kinesio',
           type: 'Youtube',
-        },
-        {
-          href: 'https://www.instagram.com/viktory.kinesio',
-          type: 'Instagram',
-        },
-        {
-          href: 'https://www.facebook.com/ViktoryKinesio',
-          type: 'Facebook',
         },
       ],
     },
