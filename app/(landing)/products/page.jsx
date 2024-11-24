@@ -3,10 +3,10 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { client } from '@/sanity/lib/client';
 
 import horizontal_portrait from '@/public/images/horizontal-portrait.jpg';
 import LinkButton from '@/app/(landing)/products/link-button';
+import { client } from '@/sanity/lib/client';
 import { playfairDisplay } from '@/app/fonts';
 
 import styles from './products.module.css';
@@ -67,6 +67,13 @@ const Products = () => {
     setProducts(fetchedProducts);
   };
 
+  const formatCategories = (categories) => {
+    if (!categories || categories.length === 0) {
+      return '';
+    }
+    return `/ ${categories.map((category) => category.title).join(', ')}`;
+  };
+
   return (
     <>
       <section className={styles.hero}>
@@ -109,7 +116,9 @@ const Products = () => {
                 <Link href={`/products/${product.slug.current}`}>
                   <h2 className={playfairDisplay.className}>{product.title}</h2>
                 </Link>
-                <p>{product.releaseDate} / Навчальний</p>
+                <p>
+                  {product.releaseDate} {formatCategories(product.categories)}
+                </p>
               </div>
               <LinkButton href={`/products/${product.slug.current}`} />
             </li>

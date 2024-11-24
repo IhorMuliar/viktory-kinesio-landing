@@ -73,45 +73,59 @@ export default {
         },
       ],
     },
-    // {
-    //   name: 'socialLinks',
-    //   title: 'Соцмережі',
-    //   type: 'array',
-    //   of: [
-    //     {
-    //       type: 'object',
-    //       fields: [
-    //         {
-    //           name: 'href',
-    //           title: 'Посилання',
-    //           type: 'url',
-    //           description: 'URL посилання на соціальну мережу',
-    //           validation: (Rule) => Rule.required(),
-    //           initialValue: 'https://www.facebook.com/',
-    //         },
-    //         {
-    //           name: 'icon',
-    //           title: 'Іконка',
-    //           type: 'string',
-    //           description: 'Ідентифікатор іконки',
-    //           initialValue: 'faFacebookF',
-    //           validation: (Rule) => Rule.required(),
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   description: 'Соцмережі для продукту',
-    //   initialValue: [
-    //     { href: 'https://www.facebook.com/GZJudoSchool/', icon: 'faFacebookF' },
-    //     {
-    //       href: 'https://www.instagram.com/zantaraia_school',
-    //       icon: 'faInstagram',
-    //     },
-    //     {
-    //       href: 'https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1',
-    //       icon: 'faTiktok',
-    //     },
-    //   ],
-    // },
+    {
+      name: 'socialLinks',
+      title: 'Соцмережі',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'href',
+              title: 'Посилання',
+              type: 'url',
+              description: 'URL посилання на соціальну мережу',
+              validation: (Rule) => Rule.required(),
+              initialValue: 'https://www.youtube.com/',
+            },
+            {
+              name: 'type',
+              title: 'Назва соціальної мережі',
+              type: 'string',
+              initialValue: 'Youtube',
+              validation: (Rule) => Rule.required(),
+              options: {
+                list: [
+                  { title: 'Telegram', value: 'Telegram' },
+                  { title: 'Youtube', value: 'Youtube' },
+                  { title: 'Instagram', value: 'Instagram' },
+                  { title: 'Facebook', value: 'Facebook' },
+                ],
+              },
+            },
+          ],
+        },
+      ],
+      description: 'Соцмережі для продукту',
+      initialValue: [
+        {
+          href: 'https://t.me/ViktoryKinesio',
+          type: 'Telegram',
+        },
+        {
+          href: 'https://www.youtube.com/@Viktory.kinesio',
+          type: 'Youtube',
+        },
+        {
+          href: 'https://www.instagram.com/viktory.kinesio',
+          type: 'Instagram',
+        },
+        {
+          href: 'https://www.facebook.com/ViktoryKinesio',
+          type: 'Facebook',
+        },
+      ],
+    },
   ],
 };

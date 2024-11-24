@@ -9,7 +9,7 @@
   position: absolute;
   color: white;
   top: 60%;
-  left: 30%;
+  left: 10%;
 }
 
 .wrapper {
@@ -31,4 +31,77 @@
 .details {
   padding-right: 300px;
   padding-left: 300px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: var(--space-4);
+}
+
+.socials a {
+  position: relative;
+  overflow: hidden;
+  background: #909c87;
+}
+
+.socials a svg {
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+}
+
+.socials a:not(.youtube) svg path {
+  fill: var(--background);
+}
+
+.youtube svg path {
+  stroke: var(--background);
+}
+
+.socials a:not(.youtube):hover svg path {
+  fill: #ffd8f9;
+  transition: fill 0.4s;
+}
+
+a.youtube svg {
+  width: 25px;
+  height: 25px;
+}
+
+.youtube:hover svg path {
+  stroke: #ffd8f9;
+  transition: stroke 0.4s;
+}
+
+.facebook svg {
+  width: 22px;
+  height: 22px;
+}
+
+.socials a:hover:before {
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 180%;
+  background: #ffd8f9;
+  transform: rotate(45deg);
+  animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.socials a:after {
+  position: absolute;
+  content: '';
+  inset: 3px;
+  background: #909c87;
+  border-radius: 50%;
 }
