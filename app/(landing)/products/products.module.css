@@ -8,7 +8,7 @@
 .hero .title {
   position: absolute;
   color: white;
-  top: 60%;
+  top: 70%;
   left: 30%;
 }
 
@@ -115,6 +115,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .hero {
+    overflow: clip;
+  }
+
+  .hero .title {
+    left: 10%;
+  }
+
+  .intro img {
+    width: auto;
+    height: 500px;
+  }
+
   .image_wrapper {
     height: 250px;
   }

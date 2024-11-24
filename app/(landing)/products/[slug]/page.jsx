@@ -77,7 +77,7 @@ const ProductDetails = async ({ params }) => {
           <h1 className={playfairDisplay.className}>{product.title}</h1>
         </div>
         <div className={styles.intro}>
-          <Image src={horizontal_portrait} alt="Test image" />
+          <Image src={product.preview.asset.url} alt="Test image" width="1200" height={700} />
         </div>
       </section>
       <section className={styles.details}>
