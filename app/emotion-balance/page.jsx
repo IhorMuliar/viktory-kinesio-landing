@@ -8,6 +8,17 @@ import TelegramIcon from './_components/telegram-icon';
 import './reset.css';
 import styles from './emotion-balance.module.css';
 
+export const metadata = {
+  title: {
+    absolute: 'Viktory Kinesio - Emotion Balance',
+  },
+  description:
+    'EMOTION BALANCE - Майстер-клас, що змінить твоє ставлення до емоцій та подарує ключ до внутрішньої рівноваги',
+  alternates: {
+    canonical: '/',
+  },
+};
+
 export const inter = Inter({
   subsets: ['latin', 'cyrillic'],
   style: ['normal', 'italic'],
