@@ -12,8 +12,8 @@
 
 .header_wrapper {
   align-items: center;
-  border-bottom: 2px solid #0f0e0e;
-  border-top: 2px solid #0f0e0e;
+  border-bottom: 2px solid #909c87;
+  border-top: 2px solid #909c87;
   display: flex;
   justify-content: space-between;
   padding: 4px 0;
@@ -21,7 +21,7 @@
 
 .header_logo {
   color: #ffffff;
-  background: #0f0e0e;
+  background: #909c87;
   padding: 2px 5px;
   font-size: 12px;
   font-weight: 700;
@@ -185,7 +185,7 @@
 }
 
 .course_target_wrapper {
-  background: #0f0e0e;
+  background: #909c87;
   padding: 28px 5px 57px;
 }
 
@@ -211,7 +211,7 @@
 .course_plan {
   padding-bottom: 43px;
   padding-top: 62px;
-  background-color: #0f0e0e;
+  background-color: #909c87;
 }
 
 .course_plan_container {
@@ -296,11 +296,11 @@
 .how_it_works_title span {
   display: inline-block;
   width: 100%;
-  background-color: #E8E7E7;
+  background-color: #D7B8D7;
 }
 
 .how_it_works_title .blue {
-  background-color: #A9BCD7;
+  background-color: #FBE3F3;
 }
 
 .how_it_works_title span:first-child {
@@ -516,7 +516,7 @@
   margin-top: 0;
   padding: 66px 16px;
   position: relative;
-  background-color: #100E0E;
+  background-color: #909c87;
 }
 
 .running_lines_wrapper {
@@ -597,7 +597,7 @@
 
 .questions {
   position: relative;
-  background-color: #000;
+  background-color: #666d5f;
   height: 650px;
   margin: 0 auto;
   max-width: 375px;
@@ -718,7 +718,7 @@
 /* Start region: Footer */
 
 .footer {
-  background: #0f0e0e;
+  background: #909c87;
 }
 
 .footer_container {
@@ -777,7 +777,6 @@
 .container {
   margin: 0 auto;
   max-width: 375px;
-  overflow-x: hidden;
   padding: 0 8px;
   position: relative;
   width: 100%;
