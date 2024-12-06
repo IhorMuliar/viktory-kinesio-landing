@@ -6,9 +6,10 @@ import styles from './slider.module.css';
 import Image from 'next/image';
 
 const images = [
-  { id: 1, src: '/images/review-1.jpg', alt: 'Review 1' },
-  { id: 2, src: '/images/review-2.jpg', alt: 'Review 2' },
-  { id: 3, src: '/images/review-3.jpg', alt: 'Review 3' },
+  { id: 1, src: '/images/review-1.jpg', alt: 'Review 1', width: '359', height: '450' },
+  { id: 2, src: '/images/review-2.jpg', alt: 'Review 2', width: '359', height: '300' },
+  { id: 3, src: '/images/review-3.jpg', alt: 'Review 3', width: '359', height: '400' },
+  { id: 4, src: '/images/review-4.jpg', alt: 'Review 4', width: '359', height: '350' },
 ];
 
 const Slider = () => {
@@ -27,7 +28,7 @@ const Slider = () => {
       <div className={styles.slides} style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {images.map((image) => (
           <div className={styles.slide} key={image.id}>
-            <Image src={image.src} width={359} height={400} alt={image.alt} />
+            <Image src={image.src} width={image.width} height={image.height} alt={image.alt} />
           </div>
         ))}
       </div>

@@ -16,7 +16,7 @@
 }
 
 .slide img {
-  width: 100%;
+  width: -webkit-fill-available;
   display: block;
 }
 

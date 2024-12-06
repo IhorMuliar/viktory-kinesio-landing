@@ -95,6 +95,9 @@
 }
 
 .hero_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   height: 350px;
   width: 100%;
   margin-bottom: 25px;
@@ -106,11 +109,9 @@
 
 .hero_image_text {
   color: #fff;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 500;
-  margin-bottom: 9px;
-  margin-top: 10px;
-  max-width: 154px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -124,11 +125,9 @@
   letter-spacing: -.05em;
 }
 
-.hero_action_text:first-child {
-  padding-left: 80px;
-}
-
 .hero_action_text a {
+  display: inline-block;
+  margin-top: 10px;
   transition: all .3s ease;
 }
 
@@ -159,7 +158,7 @@
 
 .course_target_title span {
   display: block;
-  padding-left: 80px;
+  padding-left: 40px;
 }
 
 .course_target_image {
@@ -201,7 +200,7 @@
 }
 
 .course_target_item h3 span {
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 /* End region: Course Target*/
@@ -260,7 +259,7 @@
 }
 
 .course_plan_item_text span {
-  padding-left: 40px;
+  padding-left: 10px;
 }
 
 .course_plan_outro {
@@ -500,6 +499,13 @@
   text-align: center;
   text-decoration-line: none;
   width: 100%;
+}
+
+.order_button .subtext b {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .order_button .action {
