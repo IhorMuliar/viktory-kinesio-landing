@@ -64,7 +64,11 @@ const EmotionBalance = () => {
           <div className={styles.hero_action}>
             <p className={styles.hero_action_text}>Стартуємо вже завтра!</p>
             <p className={styles.hero_action_text}>
-              👉 [<Link href="#">Оплати зараз</Link>] та отримай у подарунок:
+              👉 [
+              <Link href="https://secure.wayforpay.com/payment/emotion-balance" target="_blank">
+                Оплати зараз
+              </Link>
+              ] та отримай у подарунок:
             </p>
             <p className={styles.hero_action_text}>Техніку миттєвого зняття напруги</p>
           </div>
@@ -264,7 +268,11 @@ const EmotionBalance = () => {
       </section>
       <section className={`${styles.order} ${inter.className}`} id="order">
         <div className={`${styles.order_container} ${styles.container}`}>
-          <Link href="#" className={styles.order_button} target="_blank">
+          <Link
+            href="https://secure.wayforpay.com/payment/emotion-balance"
+            className={styles.order_button}
+            target="_blank"
+          >
             <h2 className={styles.title}>Зроби перший крок до гармонії</h2>
             <p className={styles.subtext}>
               Запишись на майстер-клас всього за <br />
