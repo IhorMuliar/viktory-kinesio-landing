@@ -6,10 +6,8 @@ import styles from './slider.module.css';
 import Image from 'next/image';
 
 const images = [
-  { id: 1, src: '/images/review-1.jpg', alt: 'Review 1', width: '359', height: '450' },
-  { id: 2, src: '/images/review-2.jpg', alt: 'Review 2', width: '359', height: '300' },
-  { id: 3, src: '/images/review-3.jpg', alt: 'Review 3', width: '359', height: '400' },
-  { id: 4, src: '/images/review-4.jpg', alt: 'Review 4', width: '359', height: '350' },
+  { id: 1, src: '/images/vibrations-review-1.jpg', alt: 'Review 1', width: '359', height: '450' },
+  { id: 2, src: '/images/vibrations-review-2.jpg', alt: 'Review 2', width: '359', height: '300' },
 ];
 
 const Slider = () => {
