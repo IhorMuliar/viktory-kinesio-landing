@@ -514,6 +514,26 @@
   margin-top: 24px;
 }
 
+.order_button .outro {
+  color: #f9eed0;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 354px;
+  text-align: center;
+  text-decoration-line: none;
+  width: 100%;
+}
+
+.order_button .outro {
+  margin-top: 20px;
+}
+
+.order_button .outro:last-child {
+  margin-top: 5px;
+}
+
 /* End region: Order */
 
 

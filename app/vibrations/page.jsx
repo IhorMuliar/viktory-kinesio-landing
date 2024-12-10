@@ -281,6 +281,8 @@ const EmotionBalance = () => {
               <b>Кількість місць обмежена!</b>
             </p>
             <p className={styles.action}>:: Приєднатися до курсу ::</p>
+            <p className={styles.outro}>та отримай в подарунок кінезіологічну гімнастику</p>
+            <p className={styles.outro}>та техніку миттєвого зняття напруги</p>
           </Link>
         </div>
       </section>
