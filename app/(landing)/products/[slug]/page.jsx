@@ -95,7 +95,7 @@ const ProductDetails = async ({ params }) => {
         <PortableText value={product.content} components={PortableTextComponent} />
         <div className={styles.actions}>
           {product.paymentLink && (
-            <Link className="button size-l primary" href={product.paymentLink}>
+            <Link className="button size-l primary" href={product.paymentLink} target="_blank">
               Придбати
             </Link>
           )}
@@ -104,7 +104,7 @@ const ProductDetails = async ({ params }) => {
               ({ href, type }) =>
                 href &&
                 type && (
-                  <a
+                  <Link
                     key={type}
                     className={`icon-link ${styles[type.toLowerCase()]}`}
                     href={href}
@@ -112,7 +112,7 @@ const ProductDetails = async ({ params }) => {
                     rel="noopener noreferrer"
                   >
                     {iconComponents[type]}
-                  </a>
+                  </Link>
                 ),
             )}
           </div>
