@@ -3,6 +3,6 @@ export const NAV_LINKS = [
   { href: '/#services', label: 'Спеціалізація' },
   { href: '/#process', label: 'Процес' },
   { href: '/#faq', label: 'Питання та відповіді' },
-  { href: '/products', label: 'Продукти' },
+  { href: '/products', label: 'Скарбничка технік' },
   { href: '/#footer', label: 'Контакти' },
 ];

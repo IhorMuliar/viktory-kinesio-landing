@@ -79,7 +79,7 @@ const Products = () => {
       <section className={styles.hero}>
         <div className={`${styles.title} ${styles.wrapper}`}>
           <h1 className={playfairDisplay.className}>
-            Мої <span>продукти</span>
+            Моя <span>скарбничка технік</span>
           </h1>
         </div>
         <div className={styles.intro}>
