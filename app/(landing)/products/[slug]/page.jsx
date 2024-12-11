@@ -1,8 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { PortableText } from '@portabletext/react';
 
 import { playfairDisplay } from '@/app/fonts';
-import horizontal_portrait from '@/public/images/horizontal-portrait.jpg';
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 
@@ -23,6 +23,8 @@ async function fetchProduct(slug) {
       description,
       content,
       slug,
+      videoLink,
+      paymentLink,
       preview {
         asset -> {
           _id,
@@ -81,23 +83,39 @@ const ProductDetails = async ({ params }) => {
         </div>
       </section>
       <section className={styles.details}>
+        {product.videoLink && (
+          <iframe
+            className={styles.video}
+            src={product.videoLink}
+            title="YouTube video player"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        )}
         <PortableText value={product.content} components={PortableTextComponent} />
-        <div className={styles.socials}>
-          {product.socialLinks?.map(
-            ({ href, type }) =>
-              href &&
-              type && (
-                <a
-                  key={type}
-                  className={`icon-link ${styles[type.toLowerCase()]}`}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {iconComponents[type]}
-                </a>
-              ),
+        <div className={styles.actions}>
+          {product.paymentLink && (
+            <Link className="button size-l primary" href={product.paymentLink}>
+              Придбати
+            </Link>
           )}
+          <div className={styles.socials}>
+            {product.socialLinks?.map(
+              ({ href, type }) =>
+                href &&
+                type && (
+                  <a
+                    key={type}
+                    className={`icon-link ${styles[type.toLowerCase()]}`}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {iconComponents[type]}
+                  </a>
+                ),
+            )}
+          </div>
         </div>
       </section>
     </>

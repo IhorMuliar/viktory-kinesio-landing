@@ -51,6 +51,20 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'videoLink',
+      title: 'Відео',
+      type: 'string',
+      description: 'Посилання на відео',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'paymentLink',
+      title: 'Оплата',
+      type: 'string',
+      description: 'Посилання на форму з оплатою',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Content',
