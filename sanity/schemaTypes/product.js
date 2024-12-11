@@ -55,14 +55,12 @@ export default {
       title: 'Відео',
       type: 'string',
       description: 'Посилання на відео',
-      validation: (Rule) => Rule.required(),
     },
     {
       name: 'paymentLink',
       title: 'Оплата',
       type: 'string',
       description: 'Посилання на форму з оплатою',
-      validation: (Rule) => Rule.required(),
     },
     {
       name: 'content',
