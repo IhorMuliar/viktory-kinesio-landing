@@ -63,7 +63,7 @@ const EmotionBalance = () => {
             <p className={styles.hero_action_text}>Стартуємо вже завтра!</p>
             <p className={styles.hero_action_text}>
               👉 [
-              <Link href="#" target="_blank">
+              <Link href="https://secure.wayforpay.com/payment/vibrations" target="_blank">
                 Оплати зараз
               </Link>
               ] та отримай у подарунок:
