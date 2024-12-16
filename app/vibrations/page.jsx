@@ -272,7 +272,11 @@ const EmotionBalance = () => {
       </section>
       <section className={`${styles.order} ${inter.className}`} id="order">
         <div className={`${styles.order_container} ${styles.container}`}>
-          <Link href="https://secure.wayforpay.com/payment/vibrations" className={styles.order_button} target="_blank">
+          <Link
+            href="https://secure.wayforpay.com/payment/vibrations"
+            className={styles.order_button}
+            target="_blank"
+          >
             <h2 className={styles.title}>Зроби перший крок до змін</h2>
             <p className={styles.subtext}>
               Запишись на майстер-клас всього за <br />
