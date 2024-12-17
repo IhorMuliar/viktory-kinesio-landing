@@ -76,7 +76,7 @@ const ProductDetails = async ({ params }) => {
     <>
       <section className={styles.hero}>
         <div className={`${styles.title} ${styles.wrapper}`}>
-          <h1 className={playfairDisplay.className}>{product.title}</h1>
+          {product.title && <h1 className={playfairDisplay.className}>{product.title}</h1>}
         </div>
         <div className={styles.intro}>
           <Image src={product.preview.asset.url} alt="Test image" width="1200" height={700} />
