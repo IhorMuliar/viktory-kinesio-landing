@@ -19,6 +19,7 @@ async function fetchProduct(slug) {
     *[_type == "product" && slug.current == $slug][0]{
       _id,
       title,
+      displayTitle,
       releaseDate,
       description,
       content,
@@ -76,7 +77,7 @@ const ProductDetails = async ({ params }) => {
     <>
       <section className={styles.hero}>
         <div className={`${styles.title} ${styles.wrapper}`}>
-          {product.title && <h1 className={playfairDisplay.className}>{product.title}</h1>}
+          {product.displayTitle && <h1 className={playfairDisplay.className}>{product.title}</h1>}
         </div>
         <div className={styles.intro}>
           <Image src={product.preview.asset.url} alt="Test image" width="1200" height={700} />

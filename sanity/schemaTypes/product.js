@@ -9,6 +9,14 @@ export default {
       title: 'Заголовок',
       type: 'string',
       description: 'Назва продукта',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'displayTitle',
+      title: 'Відображення назви продукту',
+      type: 'boolean',
+      description: 'Чи буде показуватись назва на сторінці продукта',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'releaseDate',
