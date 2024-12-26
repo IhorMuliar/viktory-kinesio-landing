@@ -14,6 +14,33 @@ import Facebook from '@/components/Footer/Facebook';
 
 export const revalidate = 0;
 
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+
+  const product = await fetchProduct(slug);
+
+  return {
+    title: product.title,
+    openGraph: {
+      images: [
+        {
+          url: `${product.preview.asset.url}`,
+          alt: product.title,
+        },
+      ],
+      url: `/products/${slug}`,
+      type: 'website',
+      locale: 'uk',
+    },
+    twitter: {
+      images: [`${product.preview.asset.url}`],
+    },
+    alternates: {
+      canonical: `/products/${slug}`,
+    },
+  };
+}
+
 async function fetchProduct(slug) {
   const query = `
     *[_type == "product" && slug.current == $slug][0]{

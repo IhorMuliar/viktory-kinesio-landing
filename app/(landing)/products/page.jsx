@@ -22,7 +22,7 @@ async function fetchCategories() {
   return client.fetch(query);
 }
 
-async function fetchProducts(categorySlug) {
+export async function fetchProducts(categorySlug) {
   const query = `
     *[_type == "product" ${categorySlug ? `&& "${categorySlug}" in categories[]->slug.current]` : ']'} | order(releaseDate desc) {
       title,

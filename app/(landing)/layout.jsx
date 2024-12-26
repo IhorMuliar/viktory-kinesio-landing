@@ -15,7 +15,6 @@ export const metadata = {
       url: 'https://www.instagram.com/viktory.kinesio',
     },
   ],
-  // category: 'sport',
   icons: [
     {
       rel: 'icon',
