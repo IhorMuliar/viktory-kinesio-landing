@@ -57,15 +57,15 @@ const About = () => {
             </div>
             <div className={styles.aboutExperience}>
               <div className={styles.experienceItem}>
-                <span className={styles.experienceNumber}>7+</span>
+                <span className={styles.experienceNumber}>15+</span>
                 <span className={styles.experienceText}>років досвіду</span>
               </div>
               <div className={styles.experienceItem}>
-                <span className={styles.experienceNumber}>500+</span>
+                <span className={styles.experienceNumber}>2000+</span>
                 <span className={styles.experienceText}>задоволених клієнтів</span>
               </div>
               <div className={styles.experienceItem}>
-                <span className={styles.experienceNumber}>5</span>
+                <span className={styles.experienceNumber}>200+</span>
                 <span className={styles.experienceText}>професійних сертифікацій</span>
               </div>
             </div>
