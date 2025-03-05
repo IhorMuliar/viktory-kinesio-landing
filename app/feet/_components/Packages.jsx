@@ -1,5 +1,6 @@
 // app/_components/Packages.jsx
 
+import Link from 'next/link';
 import styles from '../styles/main.module.css';
 
 /**
@@ -84,7 +85,9 @@ const Packages = () => {
                   ))}
                 </ul>
                 <button className={styles.packageButton}>
-                  <span className={styles.buttonText}>Обрати пакет</span>
+                  <Link href="#" className={styles.buttonText}>
+                    Обрати пакет
+                  </Link>
                   <span className={styles.buttonTextIcon}>
                     <svg
                       width="20"
