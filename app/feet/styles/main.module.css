@@ -586,4 +586,53 @@
 
 .footerLegalLink:hover {
   color: var(--color-green);
+}
+
+/* ForWhom section */
+.forWhomGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.forWhomCard {
+  background: var(--color-cream);
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.forWhomCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.forWhomIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--color-white);
+  border-radius: 16px;
+  color: var(--color-green);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.forWhomCard:hover .forWhomIcon {
+  background: var(--color-green);
+  color: var(--color-white);
+  transform: scale(1.1);
+}
+
+.forWhomText {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-dark);
 } 
