@@ -11,6 +11,17 @@ import Packages from './_components/Packages';
 import Results from './_components/Results';
 import Footer from './_components/Footer';
 
+export const metadata = {
+  title: {
+    absolute: 'Viktory Kinesio - Стопи це твоя опора',
+  },
+  description:
+    "Практикум для тих, хто хоче повернути легкість ходи, здоров'я стоп та внутрішню опору в житті!",
+  alternates: {
+    canonical: '/',
+  },
+};
+
 /**
  * FeetPage - Main landing page for the feet course
  * @returns {JSX.Element} The FeetPage component
