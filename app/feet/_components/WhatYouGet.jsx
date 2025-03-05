@@ -47,7 +47,7 @@ const WhatYouGet = () => {
             </div>
           ))}
         </div>
-        <p className={styles.text} style={{ textAlign: 'center' }}>
+        <p className={styles.text} style={{ textAlign: 'center', fontWeight: '700' }}>
           Це не тільки робота зі стопами – це повернення собі внутрішньої опори у всіх сферах життя!
         </p>
       </div>
