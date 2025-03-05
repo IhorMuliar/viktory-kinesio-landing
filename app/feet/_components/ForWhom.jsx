@@ -1,6 +1,8 @@
 // app/_components/ForWhom.jsx
 
+import Image from 'next/image';
 import styles from '../styles/main.module.css';
+import slide_2 from '@/public/images/feet/slide_2.jpg';
 
 /**
  * ForWhom component - Describes the target audience for the course
@@ -110,6 +112,9 @@ const ForWhom = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.title}>Для кого цей практикум?</h2>
+        <div className={styles.imageWrapper}>
+          <Image src={slide_2} alt="Для кого цей практикум" width={480} height={320} />
+        </div>
         <div className={styles.forWhomGrid}>
           {targetAudience.map((item, index) => (
             <div key={index} className={styles.forWhomCard}>
