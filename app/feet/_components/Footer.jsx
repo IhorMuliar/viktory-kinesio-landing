@@ -1,3 +1,5 @@
+// app/_components/Footer.jsx
+
 'use client';
 
 import Link from 'next/link';
