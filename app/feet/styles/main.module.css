@@ -73,19 +73,49 @@
 }
 
 .button {
-  background-color: var(--color-green);
-  color: var(--color-white);
-  padding: 16px 32px;
-  border-radius: 30px;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-white) 100%);
+  border: none;
+  border-radius: 100px;
+  padding: 4px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  display: inline-block;
-  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-  background-color: var(--color-dark);
   transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.buttonText {
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.buttonTextIcon {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  margin-left: 8px;
+  padding: 12px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button:hover .buttonTextIcon {
+  transform: translateX(4px);
+}
+
+.buttonTextIcon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .imageWrapper {

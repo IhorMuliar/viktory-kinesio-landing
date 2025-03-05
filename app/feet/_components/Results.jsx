@@ -57,7 +57,20 @@ const Results = () => {
           </h3>
           <p className={styles.text}>Обирай пакет та приєднуйся до практикуму</p>
           <a href="#packages" className={styles.button}>
-            Натискай та реєструйся!
+            <span className={styles.buttonText}>Натискай та реєструйся!</span>
+            <span className={styles.buttonTextIcon}>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg>
+            </span>
           </a>
         </div>
       </div>
