@@ -10,6 +10,7 @@ import About from './_components/About';
 import Packages from './_components/Packages';
 import Results from './_components/Results';
 import Footer from './_components/Footer';
+import FloatingButton from './_components/FloatingButton';
 
 export const metadata = {
   title: {
@@ -31,15 +32,20 @@ export default function FeetPage() {
     <>
       <Header />
       <main>
-        <Hero />
+        <div id="hero">
+          <Hero />
+        </div>
         <Benefits />
         <ForWhom />
         <WhatYouGet />
         <About />
-        <Packages />
+        <div id="packages">
+          <Packages />
+        </div>
         <Results />
       </main>
       <Footer />
+      <FloatingButton />
     </>
   );
 }
