@@ -16,6 +16,7 @@ const Packages = () => {
         '<b>Доступ</b> до всіх матеріалів практикуму на <b>1 місяць</b> (відео, вправи, чек-листи)',
       ],
       isPopular: false,
+      link: 'https://secure.wayforpay.com/payment/sdb7c8c0c786f',
     },
     {
       name: 'Silver',
@@ -26,6 +27,7 @@ const Packages = () => {
         'Доступ 3 місяці',
       ],
       isPopular: true,
+      link: 'https://secure.wayforpay.com/payment/s39b97605264a',
     },
     {
       name: 'Gold',
@@ -35,6 +37,7 @@ const Packages = () => {
         '<b>Індивідуальний підбір технік</b> та вправ саме для тебе',
       ],
       isPopular: false,
+      link: 'https://secure.wayforpay.com/payment/s3aebfbff8259',
     },
     {
       name: 'Diamond',
@@ -44,6 +47,7 @@ const Packages = () => {
         '<b>1 індивідуальна сесія</b> зі мною для глибокої роботи зі стопами та твоїм запитом',
       ],
       isPopular: false,
+      link: 'https://secure.wayforpay.com/payment/s41cb240fb2b5',
     },
   ];
 
@@ -87,7 +91,7 @@ const Packages = () => {
                   ))}
                 </ul>
                 <button className={styles.packageButton}>
-                  <Link href="#" className={styles.buttonText}>
+                  <Link href={pkg.link} target="_blank" className={styles.buttonText}>
                     Обрати пакет
                   </Link>
                   <span className={styles.buttonTextIcon}>
