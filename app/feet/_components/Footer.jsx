@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
           <nav className={styles.footerNav}>
-            <Link href="/what-you-get" className={styles.footerLink}>
+            <Link href="#whatyouget" className={styles.footerLink}>
               ЩО ТИ ОТРИМАЄШ
             </Link>
             <Link href="https://www.instagram.com/viktory.kinesio" className={styles.footerLink}>
