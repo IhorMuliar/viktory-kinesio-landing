@@ -15,7 +15,7 @@ export const metadata = {
   description:
     'Як підняти рівень енергії та знайти баланс - Майстер-клас, який змінить твоє ставлення до себе та життя!',
   alternates: {
-    canonical: '/',
+    canonical: 'https://viktoty-kinesio.com/vibrations',
   },
 };
 
