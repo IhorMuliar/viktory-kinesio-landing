@@ -15,7 +15,7 @@ export const metadata = {
   description:
     'EMOTION BALANCE - Майстер-клас, що змінить твоє ставлення до емоцій та подарує ключ до внутрішньої рівноваги',
   alternates: {
-    canonical: 'https://viktoty-kinesio.com/emotion-balance',
+    canonical: 'https://viktory-kinesio.com/emotion-balance',
   },
 };
 

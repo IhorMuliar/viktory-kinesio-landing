@@ -19,7 +19,7 @@ export const metadata = {
   description:
     "Практикум для тих, хто хоче повернути легкість ходи, здоров'я стоп та внутрішню опору в житті!",
   alternates: {
-    canonical: 'https://viktoty-kinesio.com/feet',
+    canonical: 'https://viktory-kinesio.com/feet',
   },
 };
 
