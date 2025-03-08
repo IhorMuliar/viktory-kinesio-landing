@@ -62,11 +62,10 @@ const EmotionBalance = () => {
           <div className={styles.hero_action}>
             <p className={styles.hero_action_text}>Стартуємо вже завтра!</p>
             <p className={styles.hero_action_text}>
-              👉 [
               <Link href="https://secure.wayforpay.com/payment/vibrations" target="_blank">
-                Оплати зараз
+                👉 Оплати зараз
               </Link>
-              ] та отримай у подарунок:
+              та отримай у подарунок:
             </p>
             <p className={styles.hero_action_text}>Відео техніку «Баланс емоцій»</p>
           </div>
@@ -75,7 +74,11 @@ const EmotionBalance = () => {
       <section className={`${styles.course_target} ${inter.className}`}>
         <div className={`${styles.course_target_container} ${styles.container}`}>
           <h2 className={styles.course_target_title}>
-            <span>Окей! Для кого</span> цей <Link href="#">[майстер-клас]</Link> підійде?
+            <span>Окей! Для кого</span> цей{' '}
+            <Link href="https://secure.wayforpay.com/payment/vibrations" target="_blank">
+              👉 майстер-клас
+            </Link>{' '}
+            підійде?
           </h2>
           <div className={styles.course_target_image}>
             <p className={styles.course_target_image_subtext}>
@@ -559,7 +562,7 @@ const EmotionBalance = () => {
           </div>
         </div>
       </section>
-      <Link className={styles.cta} href="#order">
+      <Link className={styles.cta} href="https://secure.wayforpay.com/payment/vibrations">
         Отримати доступ до курсу зі знижкою!
       </Link>
       <footer className={`${styles.footer} ${inter.className}`}>

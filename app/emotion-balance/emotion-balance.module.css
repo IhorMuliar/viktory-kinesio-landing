@@ -129,6 +129,13 @@
   display: inline-block;
   margin-top: 10px;
   transition: all .3s ease;
+  background: #909c87;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 6px;
+  margin-bottom: 4px;
 }
 
 .hero_action_text a:hover {
@@ -159,6 +166,14 @@
 .course_target_title span {
   display: block;
   padding-left: 40px;
+}
+
+.course_target_title a {
+  background: #909c87;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .course_target_image {
