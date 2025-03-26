@@ -1,4 +1,6 @@
-import Script from "next/script";
+/* prettier-ignore-file */
+
+import Script from 'next/script';
 import { montserrat } from './fonts';
 
 export default function RootLayout({ children }) {
