@@ -91,9 +91,7 @@ const Packages = () => {
                   ))}
                 </ul>
                 <Link className={styles.packageButton} href={pkg.link} target="_blank">
-                  <div className={styles.buttonText}>
-                    Обрати пакет
-                  </div>
+                  <div className={styles.buttonText}>Обрати пакет</div>
                   <span className={styles.buttonTextIcon}>
                     <svg
                       width="20"
