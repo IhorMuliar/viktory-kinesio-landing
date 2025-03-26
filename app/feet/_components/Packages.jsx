@@ -90,10 +90,10 @@ const Packages = () => {
                     </li>
                   ))}
                 </ul>
-                <button className={styles.packageButton}>
-                  <Link href={pkg.link} target="_blank" className={styles.buttonText}>
+                <Link className={styles.packageButton} href={pkg.link} target="_blank">
+                  <div className={styles.buttonText}>
                     Обрати пакет
-                  </Link>
+                  </div>
                   <span className={styles.buttonTextIcon}>
                     <svg
                       width="20"
@@ -107,7 +107,7 @@ const Packages = () => {
                       <path d="M12 5l7 7-7 7" />
                     </svg>
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
           ))}
