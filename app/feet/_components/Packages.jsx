@@ -27,7 +27,6 @@ const Packages = () => {
         'Доступ 3 місяці',
       ],
       isPopular: true,
-      link: 'https://secure.wayforpay.com/payment/s39b97605264a',
     },
     {
       name: 'Gold',
@@ -37,7 +36,6 @@ const Packages = () => {
         '<b>Індивідуальний підбір технік</b> та вправ саме для тебе',
       ],
       isPopular: false,
-      link: 'https://secure.wayforpay.com/payment/s3aebfbff8259',
     },
     {
       name: 'Diamond',
@@ -47,7 +45,6 @@ const Packages = () => {
         '<b>1 індивідуальна сесія</b> зі мною для глибокої роботи зі стопами та твоїм запитом',
       ],
       isPopular: false,
-      link: 'https://secure.wayforpay.com/payment/s41cb240fb2b5',
     },
   ];
 
@@ -90,7 +87,9 @@ const Packages = () => {
                     </li>
                   ))}
                 </ul>
-                <Link className={styles.packageButton} href={pkg.link} target="_blank">
+                { pkg.link 
+                  ? 
+                  <Link className={styles.packageButton} href={pkg.link} target="_blank">
                   <div className={styles.buttonText}>Обрати пакет</div>
                   <span className={styles.buttonTextIcon}>
                     <svg
@@ -106,6 +105,24 @@ const Packages = () => {
                     </svg>
                   </span>
                 </Link>
+                  : 
+                  <div className={styles.packageButton}>
+                  <div className={styles.buttonText}>Обрати пакет</div>
+                  <span className={styles.buttonTextIcon}>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+                  }
               </div>
             </div>
           ))}
