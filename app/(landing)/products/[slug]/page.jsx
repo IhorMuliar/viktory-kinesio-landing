@@ -59,6 +59,12 @@ async function fetchProduct(slug) {
           url
         }
       },
+      banner {
+        asset -> {
+          _id,
+          url
+        }
+      },
       socialLinks[] {
         href,
         type
@@ -107,7 +113,7 @@ const ProductDetails = async ({ params }) => {
           {product.displayTitle && <h1 className={playfairDisplay.className}>{product.title}</h1>}
         </div>
         <div className={styles.intro}>
-          <Image src={product.preview.asset.url} alt="Test image" width="1200" height={700} />
+          <Image src={product.banner.asset.url} alt="Test image" width="1200" height={700} />
         </div>
       </section>
       <section className={styles.details}>

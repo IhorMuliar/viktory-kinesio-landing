@@ -58,6 +58,16 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'banner',
+      title: 'Головний Банер',
+      type: 'image',
+      description: 'Зображення, яке буде використовуватися як головний банер продукту',
+      options: {
+        hotspot: true,
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'videoLink',
       title: 'Відео',
       type: 'string',
