@@ -10,7 +10,7 @@ import styles from './vibrations.module.css';
 
 export const metadata = {
   title: {
-    absolute: 'Viktory Kinesio - Vibrations',
+    absolute: 'Viktory Kinesio - Vibrations 2.0',
   },
   description:
     'Як підняти рівень енергії та знайти баланс - Майстер-клас, який змінить твоє ставлення до себе та життя!',
@@ -49,10 +49,10 @@ const EmotionBalance = () => {
           <div className={styles.hero_intro}>
             {/*<p className={styles.hero_date}>02.12</p>*/}
             {/*<p className={styles.hero_date_description}>| початок курсу |</p>*/}
-            <h1 className={styles.hero_title}>Як підняти рівень енергії та знайти баланс</h1>
+            <h1 className={styles.hero_title}>Як підняти рівень енергії та знайти баланс 2.0</h1>
           </div>
           <p className={styles.hero_price}>
-            Лише <b>347 грн</b> замість 1290 грн
+            Лише <b>999 грн</b> замість 2500 грн
           </p>
           <div className={styles.hero_image}>
             <div className={styles.hero_image_text}>
@@ -283,8 +283,8 @@ const EmotionBalance = () => {
             <h2 className={styles.title}>Зроби перший крок до змін</h2>
             <p className={styles.subtext}>
               Запишись на майстер-клас всього за <br />
-              <b>347 грн</b> <br /> замість 1290 грн! <br />
-               Придбай зараз і отримай у подарунок відео техніку "Баланс емоцій"!
+              <b>999 грн</b> <br /> замість 2500 грн! <br />
+              Перші 5 отримають 30 хв зідзвон зі мною для відпрацювання методу!
               <b>Кількість місць обмежена!</b>
             </p>
             <p className={styles.action}>:: Приєднатися до курсу ::</p>
