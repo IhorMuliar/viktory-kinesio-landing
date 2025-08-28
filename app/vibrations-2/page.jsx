@@ -128,33 +128,58 @@ const EmotionBalance = () => {
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:01</span>
             <p className={styles.course_plan_item_text}>
-              Простий, але надзвичайно дієвий інструмент для роботи з енергією та вібраціями;
+              Просту, але надзвичайно дієву техніку для роботи з енергією та
+              вібраціями — щоб зрушити з місця і повернути собі силу.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:02</span>
             <p className={styles.course_plan_item_text}>
-              Техніку для:
-              <br /> <span></span> Звільнення від застою емоцій.
-              <br />
-              <span></span>Підняття рівня енергії. <br />
-              <span></span>Виведення себе на частоту, де твої мрії здійснюються, а життя
-              налагоджується.
+              Техніка допоможе вам: <br />
+              • Звільнитися від емоційного застою; <br />
+              • Підняти рівень енергії; <br />
+              • Налаштувати себе на частоту, де мрії здійснюються, а життя входить у потік.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:03</span>
             <p className={styles.course_plan_item_text}>
-              Алгоритм роботи з собою та своїми станами, доступний у будь-який час;
+              Зв’язок між вібраціями та подіями у житті — чітке пояснення, чому все навколо
+              починає змінюватись, коли змінюєш себе всередині.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:04</span>
             <p className={styles.course_plan_item_text}>
-              Інформацію про зв'язок між подіями у житті та рівнем твоїх вібрацій.
+              Таблиця з коучинговими запитаннями — для глибокого самоаналізу:
+              що насправді тебе стримує?
             </p>
           </li>
-          <p className={styles.course_plan_outro}>Це твоя опора. Твій ключ до балансу.</p>
+          <li className={styles.course_plan_item}>
+            <span className={styles.course_plan_item_index}>:05</span>
+            <p className={styles.course_plan_item_text}>
+              Практики для тіла та емоцій — щоб зміни відбувалися не лише в голові,
+              а й на рівні відчуттів у тілі.
+            </p>
+          </li>
+          <li className={styles.course_plan_item}>
+            <span className={styles.course_plan_item_index}>:06</span>
+            <p className={styles.course_plan_item_text}>
+              Мої авторські техніки з енергопрактик і кінезіології — легкі у
+              виконанні, але з глибоким трансформаційним ефектом.
+            </p>
+          </li>
+          <li className={styles.course_plan_item}>
+            <span className={styles.course_plan_item_index}>:06</span>
+            <p className={styles.course_plan_item_text}>
+              Розбір блоків і внутрішніх перепон — чому все іноді зупиняється,
+              і як це перезапустити.
+            </p>
+          </li>
+          <p className={styles.course_plan_outro}>
+            🎁 Бонус-файл з розширеними описами рівнів вібрацій — ексклюзив 
+            для учасників МК (у безкоштовному гіді його немає).
+          </p>
         </ul>
       </section>
       <secion className={`${styles.about_me} ${inter.className}`}>
@@ -284,8 +309,8 @@ const EmotionBalance = () => {
             <p className={styles.subtext}>
               Запишись на майстер-клас всього за <br />
               <b>999 грн</b> <br /> замість 2500 грн! <br />
-              Перші 5 отримають 30 хв зідзвон зі мною для відпрацювання методу!
-              <b>Кількість місць обмежена!</b>
+              <b>Перші 5 отримають 30 хв зідзвон зі мною для відпрацювання методу!</b>
+              Кількість місць обмежена!
             </p>
             <p className={styles.action}>:: Приєднатися до курсу ::</p>
           </Link>
