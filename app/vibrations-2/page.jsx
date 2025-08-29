@@ -66,9 +66,7 @@ const EmotionBalance = () => {
               <Link href="https://secure.wayforpay.com/payment/vibrations" target="_blank">
                 👉 Оплати зараз
               </Link>
-              та отримай у подарунок:
             </p>
-            <p className={styles.hero_action_text}>Відео техніку «Баланс емоцій»</p>
           </div>
         </div>
       </section>
