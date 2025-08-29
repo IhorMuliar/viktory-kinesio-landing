@@ -54,6 +54,7 @@ const EmotionBalance = () => {
           <p className={styles.hero_price}>
             Лише <b>999 грн</b> замість 2500 грн
           </p>
+          <p className={styles.hero_price}>Доступ на 3 місяці</p>
           <div className={styles.hero_image}>
             <div className={styles.hero_image_text}>
               Майстер-клас, який змінить твоє ставлення до себе та життя!
@@ -312,6 +313,7 @@ const EmotionBalance = () => {
               <b>Перші 5 отримають 30 хв зідзвон зі мною для відпрацювання методу!</b>
               Кількість місць обмежена!
             </p>
+            <p>Доступ на 3 місяці</p>
             <p className={styles.action}>:: Приєднатися до курсу ::</p>
           </Link>
         </div>
