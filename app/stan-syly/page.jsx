@@ -10,12 +10,11 @@ import styles from './vibrations.module.css';
 
 export const metadata = {
   title: {
-    absolute: 'Viktory Kinesio - Vibrations 2.0',
+    absolute: 'Viktory Kinesio - Стан сили',
   },
-  description:
-    'Як підняти рівень енергії та знайти баланс - Майстер-клас, який змінить твоє ставлення до себе та життя!',
+  description: 'Майстер-клас, що допоможе підняти рівень енергії та знайти внутрішню опору',
   alternates: {
-    canonical: 'https://viktory-kinesio.com/vibrations',
+    canonical: 'https://viktory-kinesio.com/stan-syly',
   },
 };
 
@@ -49,7 +48,7 @@ const EmotionBalance = () => {
           <div className={styles.hero_intro}>
             {/*<p className={styles.hero_date}>02.12</p>*/}
             {/*<p className={styles.hero_date_description}>| початок курсу |</p>*/}
-            <h1 className={styles.hero_title}>Як підняти рівень енергії та знайти баланс 2.0</h1>
+            <h1 className={styles.hero_title}>Стан сили</h1>
           </div>
           <p className={styles.hero_price}>
             Лише <b>999 грн</b> замість 2500 грн
@@ -57,7 +56,7 @@ const EmotionBalance = () => {
           <p className={styles.hero_price}>Доступ на 3 місяці</p>
           <div className={styles.hero_image}>
             <div className={styles.hero_image_text}>
-              Майстер-клас, який змінить твоє ставлення до себе та життя!
+              Майстер-клас, що допоможе підняти рівень енергії та знайти внутрішню опору
             </div>
           </div>
           <div className={styles.hero_action}>
@@ -87,35 +86,20 @@ const EmotionBalance = () => {
           <ul className={styles.course_target_wrapper}>
             <li className={styles.course_target_item}>
               <h3>
-                <span>::</span>Почувається без сил, енергії або на дні;
+                <span>::</span>Для тих, хто втомився бути жертвою обставин;
               </h3>
             </li>
             <li className={styles.course_target_item}>
               <h3>
-                <span>::</span>Відчуває, що життя проходить повз, а мрії здійснюються не у тебе;
+                <span>::</span>Для тих, хто відчуває застій або внутрішнє спустошення;
               </h3>
             </li>
             <li className={styles.course_target_item}>
               <h3>
-                <span>::</span>Бореться з нерозумінням у стосунках,
+                <span>::</span>Для тих, хто шукає коротку і дієву практику, а не сотні сторінок
+                теорії,
               </h3>
-              <p>чи взагалі їх відсутністю;</p>
             </li>
-            <li className={styles.course_target_item}>
-              <h3>
-                <span>::</span>Шукає розвиток у застояних справах,
-              </h3>
-              <p>або хоче реалізувати важливу ідею;</p>
-            </li>
-            <li className={styles.course_target_item}>
-              <h3>
-                <span>::</span>Живе у складних умовах
-              </h3>
-              <p>i прагне знайти внутрішню опору.</p>
-            </li>
-            <p className={styles.course_target_description}>
-              Цей майстер-клас – твій шанс змінити ситуацію та відчути гармонію!
-            </p>
           </ul>
         </div>
       </section>
@@ -127,57 +111,45 @@ const EmotionBalance = () => {
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:01</span>
             <p className={styles.course_plan_item_text}>
-              Просту, але надзвичайно дієву техніку для роботи з енергією та вібраціями — щоб
-              зрушити з місця і повернути собі силу.
+              PDF-гайд «Карта рівнів» — розгорнуті описи станів, сигнали тіла та емоцій.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:02</span>
             <p className={styles.course_plan_item_text}>
-              Техніка допоможе вам: <br />
-              • Звільнитися від емоційного застою; <br />
-              • Підняти рівень енергії; <br />• Налаштувати себе на частоту, де мрії здійснюються, а
-              життя входить у потік.
+              Алгоритм переходів — що робити, щоб піднятись вище.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:03</span>
             <p className={styles.course_plan_item_text}>
-              Зв’язок між вібраціями та подіями у житті — чітке пояснення, чому все навколо починає
-              змінюватись, коли змінюєш себе всередині.
+              Коучингові запитання — допоможуть знайти особисті «застряглі місця».
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:04</span>
             <p className={styles.course_plan_item_text}>
-              Таблиця з коучинговими запитаннями — для глибокого самоаналізу: що насправді тебе
-              стримує?
+              Міні-щоденник для відслідковування прогресу (PDF) — відмічай свій рівень, емоції та
+              тілесні відчуття.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:05</span>
             <p className={styles.course_plan_item_text}>
-              Практики для тіла та емоцій — щоб зміни відбувалися не лише в голові, а й на рівні
-              відчуттів у тілі.
+              Таблиця-підказка «Підйомні практики» — швидкі інструменти, які працюють у
+              повсякденному житті.
             </p>
           </li>
           <li className={styles.course_plan_item}>
             <span className={styles.course_plan_item_index}>:06</span>
             <p className={styles.course_plan_item_text}>
-              Мої авторські техніки з енергопрактик і кінезіології — легкі у виконанні, але з
-              глибоким трансформаційним ефектом.
-            </p>
-          </li>
-          <li className={styles.course_plan_item}>
-            <span className={styles.course_plan_item_index}>:06</span>
-            <p className={styles.course_plan_item_text}>
-              Розбір блоків і внутрішніх перепон — чому все іноді зупиняється, і як це
-              перезапустити.
+              Додаткові матеріали 2.0 — нові метафори, приклади з життя, зв’язок вібрацій зі шкірою,
+              тілом та здоров’ям.
             </p>
           </li>
           <p className={styles.course_plan_outro}>
-            🎁 Бонус-файл з розширеними описами рівнів вібрацій — ексклюзив для учасників МК (у
-            безкоштовному гіді його немає).
+            🎁 Бонус для перших 5 учасників — 30-хвилинний зідзвон зі мною для відпрацювання
+            техніки.
           </p>
         </ul>
       </section>
@@ -248,21 +220,14 @@ const EmotionBalance = () => {
           </h2>
           <ul>
             <li>
-              <span className={styles.index}>::</span>Онлайн формат – займайся вдома в комфортній
-              атмосфері.
+              <span className={styles.index}>::</span> Онлайн-доступ (відео + PDF).
             </li>
             <li>
-              <span className={styles.index}>::</span>Відео запис матеріалу буде доступний тобі в
-              будь-який час.
+              <span className={styles.index}>::</span>Тривалість: 1,5 години
             </li>
             <li>
-              <span className={styles.index}>::</span>Додаткові файли:
-              <span className={styles.index}></span>
-              <br /> Карта свідомості
-              <br />
-              Алгоритм роботи з енергією
-              <br />
-              Коригуючі запитання для змін
+              <span className={styles.index}>::</span> Доступ: 3 місяці, щоб точно пройти й
+              застосувати.
             </li>
           </ul>
           <p className={styles.how_it_works_outro}>
@@ -308,7 +273,6 @@ const EmotionBalance = () => {
             <p className={styles.subtext}>
               Запишись на майстер-клас всього за <br />
               <b>999 грн</b> <br /> замість 2500 грн! <br />
-              <b>Перші 5 отримають 30 хв зідзвон зі мною для відпрацювання методу!</b>
               Кількість місць обмежена!
             </p>
             <p>Доступ на 3 місяці</p>
@@ -460,33 +424,31 @@ const EmotionBalance = () => {
           </div>
         </div>
         <div className={styles.questions}>
-          <h2 className={styles.questions_title}>FAQ</h2>
+          <h2 className={styles.questions_title}>Відповіді на сумніви</h2>
           <ul className={styles.questions_list}>
             <li className={styles.questions_question}>
               <input type="checkbox" id="q1" className={styles.questions_toggle} />
               <label htmlFor="q1" className={styles.questions_question_text}>
-                <span>:: Чи потрібно мати попередній досвід для участі в майстер-класі?</span>
+                <span>:: А якщо у мене немає сил проходити?</span>
                 <span className={styles.questions_question_mark}></span>
               </label>
               <div className={styles.questions_answer_wrapper}>
                 <p className={styles.questions__answer}>
-                  Ні, цей майстер-клас створений для новачків і тих, хто ще не мав досвіду роботи з
-                  подібними техніками. Я детально пояснюю всі кроки, тож тобі буде легко опанувати
-                  метод.
+                  Техніка проста й займає 10–15 хвилин. Це як подихати — і вже легше.
                 </p>
               </div>
             </li>
             <li className={styles.questions_question}>
               <input type="checkbox" id="q2" className={styles.questions_toggle} />
               <label htmlFor="q2" className={styles.questions_question_text}>
-                <span>:: Що робити, якщо я не вірю в такі методики?</span>
+                <span>:: Я вже пробувала інші методи. Чим це відрізняється?</span>
                 <span className={styles.questions_question_mark}></span>
               </label>
               <div className={styles.questions_answer_wrapper}>
                 <p className={styles.questions__answer}>
-                  Це нормально бути скептичним. Спробуй техніку хоча б один раз і оцінюй результати
-                  за своїми відчуттями та змінами в житті. Тут важлива не віра, а практичне
-                  застосування.
+                  Тут немає «розмов про життя». Є алгоритм роботи з енергією. Це інструмент, який
+                  працює з твоїм станом, а не з ідеями «у голові». «У мене складний період, може, не
+                  час?
                 </p>
               </div>
             </li>
@@ -507,66 +469,25 @@ const EmotionBalance = () => {
             <li className={styles.questions_question}>
               <input type="checkbox" id="q4" className={styles.questions_toggle} />
               <label htmlFor="q4" className={styles.questions_question_text}>
-                <span>:: Чи зможу я працювати з іншими людьми, використовуючи цю техніку?</span>
+                <span>:: У мене складний період, може, не час?</span>
                 <span className={styles.questions_question_mark}></span>
               </label>
               <div className={styles.questions_answer_wrapper}>
                 <p className={styles.questions__answer}>
-                  Так, якщо ти освоїш м’язовий тест і принципи самотестування, ця техніка стане
-                  потужним інструментом для допомоги іншим, якщо ти вже працюєш як практик.
+                  Якраз час. Саме тоді, коли складно, найбільше потрібна внутрішня опора.
                 </p>
               </div>
             </li>
             <li className={styles.questions_question}>
               <input type="checkbox" id="q5" className={styles.questions_toggle} />
               <label htmlFor="q5" className={styles.questions_question_text}>
-                <span>:: Як часто можна використовувати цю техніку?</span>
+                <span>:: А якщо я не зрозумію?</span>
                 <span className={styles.questions_question_mark}></span>
               </label>
               <div className={styles.questions_answer_wrapper}>
                 <p className={styles.questions__answer}>
-                  Техніку можна застосовувати стільки разів, скільки буде потрібно, щоб досягти
-                  бажаного результату в ситуації або проблемі. У деяких випадках це може бути кілька
-                  разів на день.
-                </p>
-              </div>
-            </li>
-            <li className={styles.questions_question}>
-              <input type="checkbox" id="q6" className={styles.questions_toggle} />
-              <label htmlFor="q6" className={styles.questions_question_text}>
-                <span>:: Як дізнатися, що техніка спрацювала?</span>
-                <span className={styles.questions_question_mark}></span>
-              </label>
-              <div className={styles.questions_answer_wrapper}>
-                <p className={styles.questions__answer}>
-                  Результати ти побачиш як у покращенні внутрішнього стану (оцінка за шкалою від 1
-                  до 10), так і у позитивних змінах у реальному житті.
-                </p>
-              </div>
-            </li>
-            <li className={styles.questions_question}>
-              <input type="checkbox" id="q7" className={styles.questions_toggle} />
-              <label htmlFor="q7" className={styles.questions_question_text}>
-                <span>:: Що робити, якщо я застряг на одному рівні енергії?</span>
-                <span className={styles.questions_question_mark}></span>
-              </label>
-              <div className={styles.questions_answer_wrapper}>
-                <p className={styles.questions__answer}>
-                  Це нормально. Працюй із коригуючими питаннями та чесно відповідай собі. Зміни
-                  прийдуть, якщо ти будеш наполегливо дотримуватися алгоритму.
-                </p>
-              </div>
-            </li>
-            <li className={styles.questions_question}>
-              <input type="checkbox" id="q8" className={styles.questions_toggle} />
-              <label htmlFor="q8" className={styles.questions_question_text}>
-                <span>:: Чи буде корисна ця техніка, якщо я терапевт?</span>
-                <span className={styles.questions_question_mark}></span>
-              </label>
-              <div className={styles.questions_answer_wrapper}>
-                <p className={styles.questions__answer}>
-                  Ти можеш використовувати цю техніку як додатковий інструмент в своїй роботі і
-                  використовувати як і для себе та і для роботи з людьми.
+                  У тебе буде відео + PDF. А перші 5 учасників отримають мою персональну підтримку
+                  на зідзвоні.
                 </p>
               </div>
             </li>

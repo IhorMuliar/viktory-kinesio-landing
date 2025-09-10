@@ -6,8 +6,9 @@ import styles from './slider.module.css';
 import Image from 'next/image';
 
 const images = [
-  { id: 1, src: '/images/vibrations-review-1.jpg', alt: 'Review 1', width: '359', height: '450' },
-  { id: 2, src: '/images/vibrations-review-2.jpg', alt: 'Review 2', width: '359', height: '300' },
+  { id: 1, src: '/images/vibrations-review-1.jpg', alt: 'Review 1', width: '300', height: '450' },
+  { id: 2, src: '/images/vibrations-review-2.jpg', alt: 'Review 2', width: '300', height: '300' },
+  { id: 3, src: '/images/stan-syly-review-1.jpg', alt: 'Review 2', width: '300', height: '450' },
 ];
 
 const Slider = () => {

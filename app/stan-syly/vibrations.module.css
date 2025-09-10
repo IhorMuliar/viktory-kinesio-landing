@@ -95,7 +95,7 @@
   margin-bottom: 25px;
   padding: 11px 12px;
   background-position: 50%;
-  background-image: url("/images/vibrations-hero.jpg");
+  background-image: url("/images/stan-syly-1.png");
   background-size: cover;
 }
 
@@ -173,7 +173,7 @@
   height: 462px;
   padding: 4px;
   width: 100%;
-  background-image: url('/images/vibrations-target.jpg');
+  background-image: url('/images/stan-syly-2.png');
   background-position: 50%;
   background-size: cover;
 }
@@ -364,7 +364,7 @@
   height: 462px;
   padding: 4px;
   width: 100%;
-  background-image: url(/images/vibrations-hello.jpg);
+  background-image: url(/images/stan-syly-3.png);
   background-position: 50%;
   background-size: cover;
 }
@@ -657,7 +657,7 @@
   font-weight: 700;
   letter-spacing: -.02em;
   line-height: 140%;
-  padding: 0;
+  padding-bottom: 10px;
 }
 
 .questions_list {
